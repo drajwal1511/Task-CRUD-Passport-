@@ -1,7 +1,8 @@
 const express=require('express');
 var flash = require("connect-flash");
 var seedDB=require("./seed")
-require('dotenv').config()
+const dotenv=require('dotenv');
+dotenv.config();
 // MODELS
 var User= require("./models/user");
 var Task=require("./models/task");
