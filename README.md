@@ -14,7 +14,7 @@ A task manager site, which allows registered users to create, read, update and d
 
 # ScreeShots
 ### Home Page
-![image](https://user-images.githubusercontent.com/44205030/112802968-6fc7fd80-9090-11eb-8439-c86a2296c0c9.png)   
+![image](https://user-images.githubusercontent.com/44205030/112804027-89b61000-9091-11eb-806d-aed972d67191.png)   
 ### Registration Page
 ![image](https://user-images.githubusercontent.com/44205030/112803000-79516580-9090-11eb-8d31-0a27290fef4a.png)   
 ### Login Page
