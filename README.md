@@ -12,6 +12,10 @@ A task manager site, which allows registered users to create, read, update and d
 8. Git
 9. HTML, CSS
 
+# Demo User
+### Username - Dikshant
+### Password - a
+### Also, you can register anytime.
 # ScreeShots
 ### Home Page
 ![image](https://user-images.githubusercontent.com/44205030/112804027-89b61000-9091-11eb-806d-aed972d67191.png)   
