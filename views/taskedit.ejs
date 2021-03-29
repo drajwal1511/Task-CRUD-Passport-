@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<div class="container">
+    <h1>Edit Page</h1>
+    <hr>
+    <form method="POST" action="/tasks/<%= task._id %>?_method=PUT ">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input name="title" id="title" type="text" class="form-control" value="<%= task.title %>" >
+        </div>
+        <div class="form-group">
+            <label for="desc">Description</label>
+            <input id="desc" name="desc" type="text" class="form-control" value="<%= task.desc %>" >
+        </div>
+        <div class="form-group">
+            <label for="due">Due</label>
+            <input id="due" name="due" type="text" class="form-control" value="<%= task.due %>  " >
+        </div>
+        <button class="btn btn-outline-dark" type="submit">Save Changes</button>
+        <a class="btn btn-outline-warning" style="float: right;" href="/tasks/<%= task._id %> ">Discard</a>
+    </form>
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<div class="container">
+    <h1><%= task.title %> </h1>
+    <p style="text-align: justify;"><%= task.desc %> </p>
+    <h5>Due By <%= task.due %>   </h5>
+    <a href="/tasks/<%= task._id %>/edit " class="btn btn-outline-warning">Update</a>
+    <form action="/tasks/<%= task._id %>?_method=DELETE" method="POST" style="display: inline;">
+        <button class="btn btn-danger" type="submit">Delete</button>
+        <a href="/tasks" class="btn btn-outline-secondary">Go back</a>
+    </form>
+</div>
+<%- include("partials/footer") %>

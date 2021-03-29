@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyesters Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <a class="navbar-brand" href="/">Oyesters Project</a>
+        <ul class="navbar-nav ml-auto">
+            <% if(!curuser){ %> 
+                <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+            <% } else{ %> 
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+            <% } %> 
+        </ul>
+    </nav>
+    <% if (error && error.length>0){ %> 
+        <div class="container">
+          <div style="margin-top: 15px;" class="alert alert-danger">
+            <%= error %>   
+          </div>
+        </div>
+      <% } %> 
+      <% if(success && success.length>0){ %> 
+        <div class="container">
+          <div class="alert alert-success" style="margin-top: 15px;">
+            <%= success %>   
+          </div>
+        </div>
+      <% } %> 

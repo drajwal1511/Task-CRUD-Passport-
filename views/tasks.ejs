@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+<div class="container">
+    <h1>Tasks </h1>
+    <br>
+    <a href="/tasks/new" class="btn btn-success">Create a task <i class="fa fa-plus"></i></a>
+    <hr>
+    <div class="row">
+      <% for(var i=0;i<tasks.length;i++){ %> 
+        <div class="col-lg-3 col-md-12" style="margin:0 10px 10px 0;">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><%= tasks[i].title.slice(0,15) %></h5>
+                  <hr>
+                  <h5 class="card-text"><%= tasks[i].due  %>   </h5>
+                  <% var id=String(tasks[i]._id);var url ="/tasks/"+id; %> 
+                  <a href=<%= url %>  class="btn btn-outline-secondary">More Info</a>
+
+                </div>
+              </div>
+        </div>
+    <% } %> 
+    </div>
+</div>
+<%- include("partials/footer") %>
