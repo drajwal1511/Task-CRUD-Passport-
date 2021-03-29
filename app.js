@@ -30,7 +30,7 @@ mongoose.connect(process.env.DBURL,{
 var passport=require("passport");
 var LocalStrategy=require("passport-local");
 var passportlocalmongoose=require("passport-local-mongoose");
-seedDB();
+// seedDB();
 var session=require("express-session");
 const { isloggedin } = require('./middleware/index');
 app.use(session({
