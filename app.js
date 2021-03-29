@@ -1,6 +1,7 @@
 const express=require('express');
 var flash = require("connect-flash");
 var seedDB=require("./seed")
+require('dotenv').config()
 // MODELS
 var User= require("./models/user");
 var Task=require("./models/task");
@@ -20,7 +21,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 // using mongoose
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/oyesters",{
+mongoose.connect(process.env.DBURL,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 });
