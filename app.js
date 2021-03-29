@@ -176,6 +176,6 @@ app.delete("/tasks/:id",middleware.isloggedin,(req,res)=>{
         res.redirect("/tasks");
     })
 })
-app.listen(3000,process.env.IP,()=>{
+app.listen(process.env.PORT||3000,process.env.IP,()=>{
     console.log("Server UP");
 })
