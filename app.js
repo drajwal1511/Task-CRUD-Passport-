@@ -32,7 +32,7 @@ var passport=require("passport");
 var LocalStrategy=require("passport-local");
 var passportlocalmongoose=require("passport-local-mongoose");
 // seedDB();
-var session=require("express-session");
+var session=require('cookie-session');
 const { isloggedin } = require('./middleware/index');
 app.use(session({
     secret:"asdfasdf",
